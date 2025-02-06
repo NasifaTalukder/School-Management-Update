@@ -1,11 +1,14 @@
 import React from "react";
 import Teacher1 from "../../assets/teacher-1.jpg";
+import Teacher2 from "../../assets/teacher-2.png";
+import Teacher3 from "../../assets/teacher-3.png";
+import Teacher4 from "../../assets/teacher-4.png";
 
 const TeachersSection = () => {
   const teachers = [
-    { name: "John Doe", subject: "Math", image: Teacher1 },
-    { name: "Jane Smith", subject: "Science", image: Teacher1 },
-    { name: "Mark Johnson", subject: "English", image: Teacher1 },
+    { name: "John Doe", subject: "Math", image: Teacher2 },
+    { name: "Jane Smith", subject: "Science", image: Teacher3 },
+    { name: "Mark Johnson", subject: "English", image: Teacher4 },
   ];
 
   return (

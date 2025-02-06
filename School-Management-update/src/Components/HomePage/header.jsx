@@ -3,10 +3,10 @@ import Logo from "../../assets/logo.png";
 
 const Header = () => {
   return (
-    <header className="bg-main-color text-white p-4">
+    <header className="bg-main-color text-white px-4 py-10">
       <div className="container max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between">
         {/* Logo Section */}
-        <div className="flex items-center w-28 ">
+        <div className="flex items-center w-36 ">
           <img src={Logo} alt="School Logo" className="h-auto w-full" />
         </div>
 
@@ -30,7 +30,7 @@ const Header = () => {
         <div className="mt-4 sm:mt-0">
           <button
             type="button"
-            className="bg-white text-black hover:text-white px-6 py-2 rounded-btn-radius hover:bg-main-color border-secondary-colour border-2 hover:border-black"
+            className="bg-secondary-colour border border-opacity-10 text-white hover:text-white px-6 py-2 rounded-btn-radius hover:bg-main-color border-secondary-colour  hover:border-black"
           >
             Login
           </button>

@@ -19,10 +19,31 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #16a34a; /* Green scrollbar */
+  background: #426fca; /* Green scrollbar */
   border-radius: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #15803d; /* Darker green on hover */
+  background: #426fca; /* Darker green on hover */
+}
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* Scrollbar width */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light gray background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #426fca; /* Your website's blue color */
+  border-radius: 10px; /* Fully rounded scrollbar */
+  /* border: 3px solid #f0f0f0; Adds spacing */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #426fca; /* Darker blue on hover */
 }

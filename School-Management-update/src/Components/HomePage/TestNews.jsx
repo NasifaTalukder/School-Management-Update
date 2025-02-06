@@ -73,7 +73,7 @@ export default function NoticeBoard() {
     <div className="max-w-2xl mx-auto p-4 bg-white shadow-lg rounded-xl">
       <div className="relative w-full overflow-hidden py-2 border-b">
         <div className="w-full overflow-hidden bg-gray-100 py-2">
-          <h2 className="text-center text-main-color font-bold text-base">
+          <h2 className="text-center text-secondary-colour font-bold text-base">
             Events
           </h2>
         </div>
@@ -106,7 +106,7 @@ export default function NoticeBoard() {
               className="w-8 h-8 inline-block"
             />
             <div className="flex flex-col gap-2">
-              <span className="text-main-color font-medium text-sm">
+              <span className="text-secondary-colour font-medium text-sm">
                 BUET TECHFEST 2K23 - Grand Festival for Technology Enthusiasts.
               </span>
               <span className="text-gray-500 flex item-center gap-2 text-sm">
@@ -123,7 +123,7 @@ export default function NoticeBoard() {
               className="w-8 h-8 inline-block"
             />
             <div className="flex flex-col gap-2">
-              <span className="text-main-color font-medium text-sm">
+              <span className="text-secondary-colour font-medium text-sm">
                 BUET TECHFEST 2K23 - Grand Festival for Technology Enthusiasts.
               </span>
               <span className="text-gray-500 flex item-center gap-2 text-sm">
@@ -157,7 +157,7 @@ export default function NoticeBoard() {
         <div className="mt-4 h-60 overflow-y-auto space-y-3 custom-scrollbar">
           {notices.map((notice, index) => (
             <div key={index} className="flex items-start space-x-3 p-3  ">
-              <div className="bg-main-color text-white px-3 py-2 rounded-md text-center">
+              <div className="bg-secondary-colour text-white px-3 py-2 rounded-md text-center">
                 <span className="block text-sm font-bold">{notice.date}</span>
                 <span className="block text-xs">{notice.year}</span>
               </div>

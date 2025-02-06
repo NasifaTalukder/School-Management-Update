@@ -11,14 +11,13 @@ export default {
           "100%": { transform: "translateY(-100%)" },
         },
       },
-      colors:
-       { 'main-color': '#16a34a',
-          'secondary-colour':' #15803d',
-          'third-color':'#4ade80'
-
-       },
-       borderRadius: {
-        'btn-radius': '6px',
+      colors: {
+        "main-color": "#344CB7",
+        "secondary-colour": "#426fca",
+        "third-color": "#4ade80",
+      },
+      borderRadius: {
+        "btn-radius": "6px",
       },
       animation: {
         slide: "slide 10s linear infinite",

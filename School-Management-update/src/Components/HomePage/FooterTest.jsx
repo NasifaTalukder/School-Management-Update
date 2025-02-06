@@ -31,7 +31,8 @@ const Footer = () => {
             ].map((item, index) => (
               <li key={index} className="hover:text-green-400 cursor-pointer">
                 <div className="flex gap-1">
-                  <MdKeyboardArrowRight className="text-green-400" /> {item}
+                  <MdKeyboardArrowRight className="text-secondary-colour" />{" "}
+                  {item}
                 </div>
               </li>
             ))}
@@ -60,7 +61,8 @@ const Footer = () => {
             ].map((item, index) => (
               <li key={index} className="hover:text-third-color cursor-pointer">
                 <div className="flex gap-1">
-                  <MdKeyboardArrowRight className="text-third-color" /> {item}
+                  <MdKeyboardArrowRight className="text-secondary-colour" />{" "}
+                  {item}
                 </div>
               </li>
             ))}

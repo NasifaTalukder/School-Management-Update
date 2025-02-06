@@ -1,5 +1,5 @@
+import MenuIcon from "@mui/icons-material/Menu";
 import React, { useState } from "react";
-import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -22,7 +22,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-green-500 text-slate-800 sticky top-0 z-50">
+    <nav className="bg-secondary-colour text-slate-100 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
@@ -61,18 +61,18 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        
+
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="text-white focus:outline-none text-xl"
           >
-          < MenuIcon />
+            <MenuIcon />
           </button>
         </div>
       </div>
-      
+
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-main-color text-white py-2 px-4">
@@ -85,7 +85,9 @@ const Navbar = () => {
               ) : (
                 <div>
                   <button
-                    onClick={() => setOpenDropdown(openDropdown === index ? null : index)}
+                    onClick={() =>
+                      setOpenDropdown(openDropdown === index ? null : index)
+                    }
                     className="w-full text-left py-2 focus:outline-none"
                   >
                     {item.name} &#9662;

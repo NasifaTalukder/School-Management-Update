@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AboutImage1 from "../../assets/about-1.jpg";
+import AboutImage1 from "../../assets/about-1.png";
 import AboutImage2 from "../../assets/about-2.jpg";
 import AboutImage3 from "../../assets/about-3.jpg";
 
@@ -11,7 +11,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="bg-[#F3F4F6] py-10 px-6 lg:px-16 mt-16">
+    <section className="bg-[#F3F4F6] py-12 px-6 lg:px-16 mt-16">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
         {/* Left Text Section */}
         <div className="lg:w-1/2">
@@ -42,7 +42,7 @@ const AboutSection = () => {
           )} */}
           <button
             // onClick={toggleReadMore}
-            className="mt-4 bg-main-color text-white px-5 py-2 rounded-btn-radius hover:bg-secondary-colour"
+            className="mt-4 bg-secondary-colour text-white px-5 py-2 rounded-btn-radius hover:bg-secondary-colour"
           >
             {isReadMore ? "READ LESS" : "READ MORE"}
           </button>
